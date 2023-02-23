@@ -1,0 +1,112 @@
+/* body {
+    font-family: Arial, sans-serif;
+    background-color:white;
+  } */
+
+  .loginlogo{
+    align-self: center;
+    margin: auto;
+  }
+
+  .heading{
+     font-size: 1.5rem;
+     font-size: 1.2rem;
+     font-weight: 700;
+     font-family: 'Neue',Arial,sans-serif;
+     word-wrap: normal;
+     width: 18rem;
+     /* margin-top: 2rem; */
+  }
+
+  .headerPart{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .loginForm {
+    background-color: #fff;
+    max-width: 400px;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 10px;
+   
+    /* margin-top: 5rem; */
+  }
+  
+  .loginInput{
+    display: block;
+    margin: 10px 0;
+    padding: 10px;
+    width: 22rem;
+    border: .07rem solid #151414;
+    border-radius: 5px;
+    box-sizing: border-box;
+    height: 3.5rem;
+  }
+  .inputLabel{
+    font-size: .9rem;
+    font-weight: 650;
+  }
+  .loginButton {
+    background-color:#0071dc;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    width: 100%;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 12px;
+    margin-top: 2rem;
+  }
+  
+  .loginButton:hover {
+    background-color:#0071dc;
+  }
+ 
+  img{
+    margin-left:750px ;
+    height: 4rem;
+  }
+  .row{
+    display: flex;
+    align-items: center;
+  }
+  .validation{
+    margin-left: 0%;
+    /* border: 2px solid black; */
+  }
+  .valid{
+    margin: 0;
+    margin-bottom: -.8rem;
+    height: .8rem;
+    
+  }
+
+  .passwordError{
+    margin-top: 1rem;
+    margin-bottom: 0.2rem;
+    font-size: .8rem;
+    font-weight: 650;
+  }
+  .checker{
+    margin-left: .3rem;
+    font-weight: 20;
+  }
+
+  .errorMessage{
+    margin-top: 1rem;
+    margin-bottom: 0.2rem;
+    font-size: .8rem;
+    font-weight: 300;
+    color: red;
+  }
+  .showEmail{
+    font-size: 1rem;
+    font-weight: 300;
+    color: grey;
+    display: flex;
+    flex-direction: column;
+    line-height: 0.4;
+  }

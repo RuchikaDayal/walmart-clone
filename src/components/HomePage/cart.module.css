@@ -1,0 +1,52 @@
+.cart {
+    max-width: 30rem;
+    background-color: #313131;
+    color: white;
+  }
+  
+  .cart h2 {
+    font-size: 1.25rem;
+    margin: 0.5rem 0;
+  }
+  
+  .cart ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  .number{
+    margin: 3rem;
+  }
+  .car{
+    height: 10rem;
+    margin: 0%;
+    margin-left: 45%;
+  }
+  .para{
+    text-align: center;
+    margin: 1rem;
+    color:black;
+    font-size: 1.4rem;
+    
+  }
+  .paraa{
+    text-align: center;
+    margin: 1rem;
+    color: #514d4d;
+    
+  }
+  .signin{
+    margin-left: 45%;
+    border: 1px solid #0071dc;
+    background-color: #0071dc;
+    width: 13rem;
+    height: 3rem;
+    border-radius: 12px;
+    
+
+  }
+  .data{
+    margin: 0%;
+    margin-left: 35%;
+    height: 6rem;
+  }

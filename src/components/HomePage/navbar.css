@@ -1,0 +1,156 @@
+
+  body{
+    margin: 0%;
+  }
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color:#0071dc;
+    color: #fff;
+    padding: 1rem 1.8rem;
+    margin: 0%;
+  }
+
+  .firstpart{
+    display: flex;
+  }
+  
+  .logo {
+  width: 8rem;
+  height: 2rem;
+  margin-left: 0%;
+  margin-right: 1.2rem;
+  }
+  
+  .searchbar {
+    display: flex;
+    align-items: center;
+  }
+  .searchbar input {
+    height: 38px;
+    padding: 0 10px;
+    border: none;
+    font-size: 1rem;
+    font-weight: 400;
+    border-radius: 20px;
+    width: 42rem;
+  }
+  
+  
+  .menu-icon {
+    display: none;
+  }
+  .menu {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .menu li {
+    margin: 0 10px;
+  }
+  
+  .menu a {
+    color: #fff;
+    text-decoration: none;
+  }
+  @media (max-width: 1380px) {
+    .searchbar input {
+      width: 100%;
+      border-radius: 5px;
+    }
+  
+    .menu {
+      display: none;
+    }
+
+    .logo {
+      content: url('https://i5.walmartimages.com/dfw/4ff9c6c9-991c/k2-_03d329be-5936-4ef6-ad29-95e392df014d.v1.png');
+      height: 1.5rem;
+      width: 1.5rem;
+      padding: auto;
+    }
+  
+    .menu-icon {
+      display: block;
+      font-size: 28px;
+      cursor: pointer;
+    }
+  
+    .menu.open {
+      display: flex;
+      flex-direction: column;
+      position: absolute;
+      top: 60px;
+      left: 0;
+      right: 0;
+      background-color: #333;
+    }
+    .menu.open li {
+      margin: 10px 0;
+    }
+  
+    .menu.open li:first-child {
+      margin-top: 0;
+    }
+  
+    .menu.open li:last-child {
+      margin-bottom: 0;
+    }
+    
+  }
+  .navicon img{
+    height: 1rem;
+    margin: auto;
+    padding-right: 0.5rem;
+  }
+  .navicon {
+    font-weight: 700;
+    font-size: .9rem;
+  }
+.item img{
+  height: 2.5rem;
+  width: 6rem;
+  margin-left: 0%;
+}
+.cart img{
+  height: 1.5rem;
+  width: 3rem;
+  margin-top:-1.4rem;
+  margin-left: .1rem;
+  
+}
+.cart{
+  display: flex;
+  flex-direction: column;
+
+}
+.cart span{
+  margin-left: 2.2rem;
+  font-size: 1.2rem;
+  border:1px solid #333;
+  background-color: #fabc1f;
+  width: 2rem;
+  text-align: center;
+  border-radius: 15px;
+  height: 1.8rem;
+  z-index: 0;
+
+  
+}
+.login{
+  background-color: #0071dc;
+  /* border: 1px solid#334d65; */
+  border: none;
+  color: white;
+  text-align: center;
+  border-radius: 12px;
+  width: 7rem;
+  font-size: 1.2rem;
+  
+
+}

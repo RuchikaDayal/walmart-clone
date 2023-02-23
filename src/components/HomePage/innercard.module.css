@@ -1,0 +1,83 @@
+.middle{
+    background-color: white;
+    margin: auto;
+    padding: 0.8rem;
+    display: flex;
+}
+
+.left{
+    width: 70vw;
+    border-radius: 12px;
+    height: "100%";
+    margin: 1rem;
+    overflow: hidden;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.right{
+    height: '100%';
+    width: 35vw;
+    border-radius: 12px;
+    margin: 1rem;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.sideProduct{
+    width: 100%;
+    margin: auto;
+    height: 100%;
+    border-radius: .5rem;
+}
+
+.middleCard{
+    display: flex;
+    justify-content: space-between;
+    box-shadow: none;
+
+}
+
+.collection {
+    width: 48%; 
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    margin: 0.2rem;
+    border-radius: 1rem;
+    padding: 1rem;
+}
+
+.combo{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 0;
+    margin: 0.2rem ;
+    box-shadow: none;
+ 
+}
+
+.comboItem{
+    width: 100%;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    border-radius: 1rem;
+    background-color: grey;
+    height: 40%;
+    overflow: hidden;
+}
+
+.comboBottom{
+    height: 56%;
+}
+
+.footer{
+    background-image: url("https://i5.walmartimages.com/dfw/63fd9f59-ac39/29c6759d-7f14-49fa-bd3a-b870eb4fb8fb/v1/wplus-bg-dweb.svg");
+    background-size: cover;
+    height: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;;
+    font-size: 1.2rem;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: 600;
+    color: white;
+}
