@@ -18,9 +18,9 @@
     margin: 3rem;
   }
   .car{
-    height: 10rem;
+    height: 30vh;
     margin: 0%;
-    margin-left: 45%;
+    /* margin-left: 45%; */
   }
   .para{
     text-align: center;
@@ -36,17 +36,28 @@
     
   }
   .signin{
-    margin-left: 45%;
+    /* margin-left: 45%; */
     border: 1px solid #0071dc;
     background-color: #0071dc;
     width: 13rem;
     height: 3rem;
     border-radius: 12px;
+    font-size: 20px;
     
 
   }
   .data{
     margin: 0%;
-    margin-left: 35%;
-    height: 6rem;
+    /* margin-left: 35%; */
+    /* height: 6rem; */
+    /* width: 0%; */
+  }
+  .cartContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding-top: 1rem;
+    font-size: 0.96vw;
   }

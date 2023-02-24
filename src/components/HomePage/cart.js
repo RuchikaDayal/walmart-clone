@@ -6,6 +6,7 @@ import Navbar from './navbar';
 import React, { useEffect, useState } from "react";
 import style from './cart.module.css';
 import { connect } from 'react-redux';
+import { Link } from 'react-router-dom';
 
 
 const Cart = (props) => {
@@ -41,11 +42,11 @@ const Cart = (props) => {
    <>
 
       {empty &&
-        <div>
+        <div className={style.cartContainer}>
           <h3 className={style.number}>Cart <span>( 0 items)</span></h3>
           <img className={style.car} src={'https://i.ibb.co/YpkYMWR/Screenshot-20230218-013119.png'}></img>
           {!login ? <p className={style.para}> Sign in to see your saved items.</p>: <p className={style.para}> Time to start shopping!</p> }
-          {!login&&<button className={style.signin}> Sign in</button>}
+          {!login&&<Link to={'/login'}><button className={style.signin}> Sign in</button></Link>}
           <p className={style.paraa}>Time to start shopping!</p>
           <p className={style.para}>Fill it up with savings from these popular departments.
           </p>
@@ -66,7 +67,7 @@ const Cart = (props) => {
                <CartItem/> 
         
       </ul>)} */}
-          {!empty && <ul><CartItem /></ul>}
+          {!empty && <CartItem />}
         </>
 
         )

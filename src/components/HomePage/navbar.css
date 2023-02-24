@@ -14,6 +14,8 @@
 
   .firstpart{
     display: flex;
+    justify-content: space-between;
+    width: 100%;
   }
   
   .logo {
@@ -26,15 +28,18 @@
   .searchbar {
     display: flex;
     align-items: center;
+    min-width: 40vw;
+    /* max-width: 40rem; */
   }
+
   .searchbar input {
-    height: 38px;
-    padding: 0 10px;
+    height: 2rem;
+    padding: 0 .62rem;
     border: none;
     font-size: 1rem;
     font-weight: 400;
-    border-radius: 20px;
-    width: 42rem;
+    border-radius: 1.25rem;
+    width: 100%;
   }
   
   
@@ -51,17 +56,21 @@
   }
   
   .menu li {
-    margin: 0 10px;
+    margin: 0 .3rem;
   }
   
   .menu a {
     color: #fff;
     text-decoration: none;
   }
-  @media (max-width: 1380px) {
+  @media (max-width: 1024px) {
     .searchbar input {
-      width: 100%;
-      border-radius: 5px;
+      min-width: 100%;
+      border-radius: 2rem;
+    }
+    .searchbar {
+      min-width: 80%;
+      /* border-radius: 5px; */
     }
   
     .menu {
@@ -77,7 +86,7 @@
   
     .menu-icon {
       display: block;
-      font-size: 28px;
+      font-size: 1.75rem;
       cursor: pointer;
     }
   
@@ -85,13 +94,13 @@
       display: flex;
       flex-direction: column;
       position: absolute;
-      top: 60px;
+      top: 3.5rem;
       left: 0;
       right: 0;
       background-color: #333;
     }
     .menu.open li {
-      margin: 10px 0;
+      margin: .62rem 0;
     }
   
     .menu.open li:first-child {
@@ -117,9 +126,10 @@
   width: 6rem;
   margin-left: 0%;
 }
+
 .cart img{
   height: 1.5rem;
-  width: 3rem;
+  width: 2rem;
   margin-top:-1.4rem;
   margin-left: .1rem;
   
@@ -129,28 +139,26 @@
   flex-direction: column;
 
 }
-.cart span{
-  margin-left: 2.2rem;
-  font-size: 1.2rem;
-  border:1px solid #333;
-  background-color: #fabc1f;
-  width: 2rem;
-  text-align: center;
-  border-radius: 15px;
-  height: 1.8rem;
-  z-index: 0;
 
-  
+.cart span {
+  background-color: #fabc1f;
+  border: 1px solid #333;
+  border-radius: .9rem;
+  height: 1.1rem;
+  margin-left: 1.2rem;
+  width: 1.1rem;
+  z-index: 0;
 }
+
 .login{
   background-color: #0071dc;
   /* border: 1px solid#334d65; */
   border: none;
   color: white;
   text-align: center;
-  border-radius: 12px;
+  border-radius: .75rem;
   width: 7rem;
-  font-size: 1.2rem;
+  font-size: 1rem;
   
 
 }

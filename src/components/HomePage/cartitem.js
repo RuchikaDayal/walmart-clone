@@ -10,10 +10,6 @@ const CartItem = (props) => {
 
     const cartItems = useSelector(state => state.cart.items)
 
-    // const cartItems = [
-    //     {id: '4', price: '505', quantity: 2, totalPrice: '505505', name: 'afcswdc afcwas', img: 'https://i.ibb.co/Mp5VYML/Screenshot-2023-02-17-at-8-53-06-PM.png'},  {id: '4', price: '505', quantity: 2, totalPrice: '505505', name: 'casdc gsdcsadsc', img: 'https://i.ibb.co/Mp5VYML/Screenshot-2023-02-17-at-8-53-06-PM.png'}]
-    // const { quantity, total, price, id } = cartItems[0]
-
     const addcart = (data) => {
          const { quantity, total, price, id } = data
         dispatch(cartAction.addItemToCart({ quantity, total, price, id }))
@@ -26,6 +22,7 @@ const CartItem = (props) => {
 
     return (
         <div className={style.body}>
+            <div className={style.container}>
             <p className={style.cartCounter}>
                 Cart <span className={style.counter}>({counter} items)</span>
             </p>
@@ -42,7 +39,7 @@ const CartItem = (props) => {
                     {cartItems.map((item) => (
                         <div className={style.cardItem}>
                             <div className={style.cardItemHeader}>
-                                <p style={{ fontSize: '1rem' }}>Arrives tomorrow, Feb 18</p>
+                                <p >Arrives tomorrow, Feb 18</p>
                                 <p className={style.counter} style={{ fontSize: '0.8rem' }}>1 item</p>
                             </div>
                             <p style={{ fontSize: '0.8rem' }}>Sold and shipped by <span style={{ fontWeight: '500', fontSize: '1rem' }}>Walmart</span></p>
@@ -74,7 +71,7 @@ const CartItem = (props) => {
                 </div>
             </div>
 
-
+        </div>
 
         </div>
     );

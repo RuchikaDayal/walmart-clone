@@ -54,3 +54,24 @@
     margin-top: 0;
     margin : auto;
 }
+
+.hideplus{
+    display: flex;
+}
+
+@media (max-width: 1024px) {
+    .hide{
+        display: none;
+    }
+}
+
+@media (max-width: 680px) {
+    .hideplus{
+        display: none;
+    }
+}
+
+/* @media screen and (max-width: 995px), 
+       screen and (max-height: 700px) {
+  
+} */

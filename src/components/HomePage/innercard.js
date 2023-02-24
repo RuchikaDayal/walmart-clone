@@ -5,11 +5,11 @@ const InnerCard =()=>{
 return (
     <>
     <div className={style.middle}>
-        <div className={style.left}>
-            <Carousel/>
+        <div className={`${style.left}`}>
+            <Link to='/product'><Carousel/></Link>
 
         </div>
-        <div className={style.right}>
+        <div className={`${style.right} ${style.hide}`}>
            <Link to='/product'> <img src='https://i.ibb.co/kGP07yf/Screenshot-2023-02-17-at-6-16-43-PM.png' 
             // style={{width:'100%', margin:0, height:'100%'}} 
             className={style.sideProduct}
@@ -33,7 +33,7 @@ return (
             </div>
 
         </div>
-        <div className={style.right}>
+        <div className={`${style.right} ${style.hide}`}>
         <Link to='/product'>   <img src='https://i.ibb.co/0F3VHS4/Screenshot-2023-02-17-at-9-06-59-PM.png' 
             // style={{width:'100%', margin:0, height:'100%'}} 
             className={style.sideProduct}

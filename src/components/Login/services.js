@@ -1,7 +1,4 @@
-
-
-
-exports.signup = async (email, password) => {
+export const signup = async (email, password) => {
     const res  = await fetch('https://identitytoolkit.googleapis.com/v1/accounts:signUp?key=AIzaSyBnIbYcA_GG_Iu1NtrDE6p_HMt8L2YdzGY',{
       method: 'POST',
       body: JSON.stringify({
@@ -28,7 +25,7 @@ exports.signup = async (email, password) => {
 
 };
 
-exports.login = async (email, password) => {
+export const login = async (email, password) => {
     console.log(email, password, 'email and password')
     const res  = await fetch('https://identitytoolkit.googleapis.com/v1/accounts:signInWithPassword?key=AIzaSyBnIbYcA_GG_Iu1NtrDE6p_HMt8L2YdzGY',{
       method: 'POST',
